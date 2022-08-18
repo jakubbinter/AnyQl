@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnyQl", "AnyQl\AnyQl.csproj", "{4AF5FB5E-F0A2-42D4-8860-33303745375A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{4E67CD77-4FF5-4504-B315-AD61794932D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonExample", "Examples\JsonExample\JsonExample.csproj", "{66DE4846-6D34-4263-BBA2-3A91EF29F6B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AF5FB5E-F0A2-42D4-8860-33303745375A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF5FB5E-F0A2-42D4-8860-33303745375A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF5FB5E-F0A2-42D4-8860-33303745375A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF5FB5E-F0A2-42D4-8860-33303745375A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66DE4846-6D34-4263-BBA2-3A91EF29F6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66DE4846-6D34-4263-BBA2-3A91EF29F6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66DE4846-6D34-4263-BBA2-3A91EF29F6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66DE4846-6D34-4263-BBA2-3A91EF29F6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66DE4846-6D34-4263-BBA2-3A91EF29F6B5} = {4E67CD77-4FF5-4504-B315-AD61794932D1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D0C45C-D0E0-4C0F-A05C-F6D1813936D9}
+	EndGlobalSection
+EndGlobal
