@@ -48,7 +48,8 @@ namespace AnyQl.Formats
                 JObject obj = JObject.Parse(source);
                 JToken token = obj.SelectToken("$."+field) ?? throw new ArgumentException($"field {field} is not primitive value");
                 JValue value = (token as JValue) ?? throw new ArgumentException($"field {field} is not value");
-                result[i] = value.Type == JTokenType.String || value.Type == JTokenType.Date ? $"'{value.Value}'" : value.Value!.ToString()!.Replace(',','.') ?? throw new ArgumentException($"field {field} is not primitive value");
+                string val = value.Value!.ToString()!;
+                result[i] = value.Type == JTokenType.String || value.Type == JTokenType.Date ? $"'{val.Replace("'","''")}'" : val.ToString().Replace(',','.') ?? throw new ArgumentException($"field {field} is not primitive value");
             }
             return result;
         }
