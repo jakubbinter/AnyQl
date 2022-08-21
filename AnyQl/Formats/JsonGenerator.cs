@@ -8,8 +8,20 @@ using AnyQl.Sql;
 
 namespace AnyQl.Formats
 {
+    /// <summary>
+    /// Class Containing Methods for generating sql strings from json
+    /// </summary>
     public static class JsonGenerator
     {
+        /// <summary>
+        /// method that generates sql string from json
+        /// </summary>
+        /// <param name="source">json string</param>
+        /// <param name="fields">fields in the json that should be extracted</param>
+        /// <param name="columnNames">names of the columns in the databse</param>
+        /// <param name="TableName">name of the table in the database</param>
+        /// <param name="type">type of sql string</param>
+        /// <returns>generated sql string</returns>
         public static string? GenerateJson(string source, string[] fields, string[] columnNames, string TableName, SqlStatementType type)
         {
             string[] values = GetFieldValues(source, fields);
@@ -20,6 +32,13 @@ namespace AnyQl.Formats
                 default: return null;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="source">json string</param>
+        /// <param name="fields">fields in the json that should be extracted</param>
+        /// <returns>values of the fields in the json</returns>
+        /// <exception cref="ArgumentException"></exception>
         private static string[] GetFieldValues(string source, string[] fields)
         {
             string[] result=new string[fields.Length];
