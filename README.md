@@ -1,6 +1,6 @@
 # AnyQl
 C# library for extracting fields from strings in formats such as json and generating sql INSERT or UPDATE strings from them.   
-Curently only supported file format is Json.  
+Curently only supported file formats are Json and Xml.  
 > :warning: This project is in development and is not ready for usage!
 ## [Documentation](./docs/AnyQl.md)
 ## Example Program
