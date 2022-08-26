@@ -21,6 +21,7 @@ namespace AnyQl
             switch (format)
             {
                 case FileFormat.Json:return JsonGenerator.GenerateJson(source, fields, columnNames, tableName, type);
+                case FileFormat.Xml:
                 default: return null;
             }
             

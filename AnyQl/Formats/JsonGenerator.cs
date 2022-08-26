@@ -33,7 +33,7 @@ namespace AnyQl.Formats
             }
         }
         /// <summary>
-        /// 
+        /// methods that gets values out of json
         /// </summary>
         /// <param name="source">json string</param>
         /// <param name="fields">fields in the json that should be extracted</param>

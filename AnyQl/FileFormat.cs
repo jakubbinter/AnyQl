@@ -14,6 +14,10 @@ namespace AnyQl
         /// <summary>
         /// json file type
         /// </summary>
-        Json
+        Json,
+        /// <summary>
+        /// xml file format
+        /// </summary>
+        Xml
     }
 }
