@@ -22,14 +22,14 @@ namespace AnyQl.Formats
         /// <param name="TableName">name of the table in the database</param>
         /// <param name="type">type of sql string</param>
         /// <returns>generated sql string</returns>
-        public static string? GenerateJson(string source, string[] fields, string[] columnNames, string TableName, SqlStatementType type)
+        public static string GenerateJson(string source, string[] fields, string[] columnNames, string TableName, SqlStatementType type)
         {
             string[] values = GetFieldValues(source, fields);
             switch (type)
             {
                 case SqlStatementType.INSERT:return SqlStringGenerator.GenerateInsertSqlString(columnNames, values, TableName);
                 case SqlStatementType.UPDATE:return SqlStringGenerator.GenerateUpdateSqlString(columnNames, values, TableName);
-                default: return null;
+                default: return "";
             }
         }
         /// <summary>

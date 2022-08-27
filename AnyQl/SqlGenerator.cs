@@ -16,13 +16,13 @@ namespace AnyQl
         /// <param name="format">FileFormat of the source string</param>
         /// <param name="type">type of sql string that will be generated</param>
         /// <returns>generated sql string</returns>
-        public static string? Generate(string source, string[] fields, string[] columnNames, string tableName, FileFormat format, SqlStatementType type)
+        public static string Generate(string source, string[] fields, string[] columnNames, string tableName, FileFormat format, SqlStatementType type)
         {
             switch (format)
             {
                 case FileFormat.Json:return JsonGenerator.GenerateJson(source, fields, columnNames, tableName, type);
-                case FileFormat.Xml:
-                default: return null;
+                case FileFormat.Xml:return XmlGenerator.GenerateXml(source, fields, columnNames, tableName, type);
+                default: return "";
             }
             
         }
@@ -35,7 +35,7 @@ namespace AnyQl
         /// <param name="format">FileFormat of the source string</param>
         /// <param name="type">type of sql string that will be generated</param>
         /// <returns>generated sql string</returns>
-        public static string? Generate(string source, string[] fields, string tableName, FileFormat format, SqlStatementType type)
+        public static string Generate(string source, string[] fields, string tableName, FileFormat format, SqlStatementType type)
         {
             string[] columnNames = new string[fields.Length];
             for (int i = 0; i < columnNames.Length; i++)

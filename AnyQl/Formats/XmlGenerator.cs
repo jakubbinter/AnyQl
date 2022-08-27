@@ -30,7 +30,7 @@ namespace AnyQl.Formats
             {
                 case SqlStatementType.INSERT: return SqlStringGenerator.GenerateInsertSqlString(columnNames, values, TableName);
                 case SqlStatementType.UPDATE: return SqlStringGenerator.GenerateUpdateSqlString(columnNames, values, TableName);
-                default: return null!;
+                default: return "";
             }
         }
         /// <summary>
