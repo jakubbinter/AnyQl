@@ -13,6 +13,7 @@
 | public type | description |
 | --- | --- |
 | static class [JsonGenerator](./AnyQl.Formats/JsonGenerator.md) | Class Containing Methods for generating sql strings from json |
+| static class [XmlGenerator](./AnyQl.Formats/XmlGenerator.md) | Class Containing Methods for generating sql strings from json |
 
 ## AnyQl.Sql namespace
 

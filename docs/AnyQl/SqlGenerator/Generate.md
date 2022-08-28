@@ -3,7 +3,7 @@
 method that generates sql string from source, names for columns in database are the same as last elements of fields in the source string
 
 ```csharp
-public static string? Generate(string source, string[] fields, string tableName, FileFormat format, 
+public static string Generate(string source, string[] fields, string tableName, FileFormat format, 
     SqlStatementType type)
 ```
 
@@ -33,7 +33,7 @@ generated sql string
 method that generates sql string from source, with explicit names for columns in database
 
 ```csharp
-public static string? Generate(string source, string[] fields, string[] columnNames, 
+public static string Generate(string source, string[] fields, string[] columnNames, 
     string tableName, FileFormat format, SqlStatementType type)
 ```
 

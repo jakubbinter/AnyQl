@@ -11,6 +11,7 @@ public enum FileFormat
 | name | value | description |
 | --- | --- | --- |
 | Json | `0` | json file type |
+| Xml | `1` | xml file format |
 
 ## See Also
 

@@ -16,7 +16,7 @@ public static class JsonGenerator
 
 | name | description |
 | --- | --- |
-| static [GetFieldValues](JsonGenerator/GetFieldValues.md)(…) |  |
+| static [GetFieldValues](JsonGenerator/GetFieldValues.md)(…) | methods that gets values out of json |
 
 ## See Also
 
