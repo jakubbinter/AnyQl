@@ -89,7 +89,7 @@ namespace AnyQl.Formats
                         throw new ArgumentException($"{part} is not valid node name");
                     }
                 }
-                result[i] = $"'{result[i]}'";
+                result[i] = $"'{result[i].Replace("'","''")}'";
             }
             return result;
         }

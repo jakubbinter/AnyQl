@@ -13,10 +13,10 @@ string Json = @"{
     ]
 }";
 //sample insert string with implicit column names
-string? sampleInsert = SqlGenerator.Generate(Json, new string[] { "items[0].recepie_name", "items[0].cooking_process" }, "MyRecepies", FileFormat.Json, SqlStatementType.INSERT);
+string sampleInsert = SqlGenerator.Generate(Json, new string[] { "items[0].recepie_name", "items[0].cooking_process" }, "MyRecepies", FileFormat.Json, SqlStatementType.INSERT);
 
 //sample update string with explicit column names
-string? sampleUpdate = SqlGenerator.Generate(Json, new string[] { "items[0].recepie_name", "items[0].cooking_process" }, new string[] { "NameOfRecepie", "process" }, "MyRecepies", FileFormat.Json, SqlStatementType.UPDATE);
+string sampleUpdate = SqlGenerator.Generate(Json, new string[] { "items[0].recepie_name", "items[0].cooking_process" }, new string[] { "NameOfRecepie", "process" }, "MyRecepies", FileFormat.Json, SqlStatementType.UPDATE);
 
 Console.WriteLine(sampleInsert);
 Console.WriteLine(sampleUpdate);
