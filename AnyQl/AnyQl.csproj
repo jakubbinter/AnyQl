@@ -5,7 +5,24 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Title>AnyQl</Title>
+    <Version>1.0.0</Version>
+    <Authors>JakubBinter </Authors>
+    <Description>C# library for extracting fields from strings in formats such as json and generating sql INSERT or UPDATE strings from them</Description>
+    <Copyright>Copyright (c) 2022 Jakub Binter</Copyright>
+    <RepositoryUrl>https://github.com/jakubbinter/AnyQl</RepositoryUrl>
+    <PackageTags>json; xml; sql; dotnet; sql-string</PackageTags>
+    <PackageReleaseNotes>first release</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>NugetREADME.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\NugetREADME.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
