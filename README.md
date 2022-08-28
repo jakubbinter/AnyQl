@@ -1,7 +1,7 @@
 # AnyQl
 C# library for extracting fields from strings in formats such as json and generating sql INSERT or UPDATE strings from them.   
 Curently only supported file formats are Json and Xml.  
-> :warning: This project is in development and is not ready for usage!
+> :warning: This project is in development and probably contains some bugs, if you find some, it would be nice if you would create an issue about it!
 ## [Documentation](./docs/AnyQl.md)
 ## Example Program
 ```cs
@@ -33,3 +33,4 @@ output of this code is
 INSERT INTO MyRecepies(recepie_name, cooking_process) VALUES('potatoe chips', 'wash your potatoes, cut them to small slices, put bit of salt on them and put them to oven for 30 minutes at 200°C')
 UPDATE MyRecepies SET NameOfRecepie='potatoe chips', process='wash your potatoes, cut them to small slices, put bit of salt on them and put them to oven for 30 minutes at 200°C'
 ```
+look at [Example Folder](./Examples) for more sample code
