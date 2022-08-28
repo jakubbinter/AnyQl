@@ -17,6 +17,7 @@ Curently only supported file formats are Json and Xml.
 > :warning: This project is in development and probably contains some bugs, if you find some, it would be nice if you would create an issue about it!
 ## [Documentation](./docs/AnyQl.md)
 ## Example Program
+You can access fields in the source string the same way as objects in normal code for example `myobject1.myobject2.myarray[5]`
 ```cs
 using AnyQl;
 
