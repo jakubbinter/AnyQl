@@ -12,7 +12,7 @@
 </a> 
 <br/>
 C# library for extracting fields from strings in formats such as json and generating sql INSERT or UPDATE strings from them.   
-Curently only supported file formats are Json and Xml.  
+Curently only supported file formats are Json and Xml, the only supported sql flavor is sql server.  
 
 > :warning: This project is in development and probably contains some bugs, if you find some, it would be nice if you would create an issue about it!
 ## [Documentation](./docs/AnyQl.md)
